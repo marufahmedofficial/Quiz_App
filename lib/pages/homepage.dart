@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:quiz_app/customwidget/quiz_item.dart';
+import 'package:quiz_app/pages/result_page.dart';
 import 'package:quiz_app/temp_db.dart';
 
 class HomePage extends StatefulWidget {
@@ -82,6 +83,8 @@ class _HomePageState extends State<HomePage> {
   }
 
   void navigate() {
-
+    Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const ResultPage()));
   }
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/temp_db.dart';
 
-import '../temp_db.dart';
 
 class ListItem extends StatelessWidget {
   final int index;

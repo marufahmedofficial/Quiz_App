@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_app/custom_text_style.dart';
 import 'package:quiz_app/temp_db.dart';
 
-import '../custom_text_style.dart';
 
 class QuizItem extends StatefulWidget {
   final int serial;

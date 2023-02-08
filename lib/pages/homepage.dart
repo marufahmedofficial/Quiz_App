@@ -14,7 +14,7 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   bool hasQuizStarted = false;
   Timer? timer;
-  int count = 10;
+  int count = 15;
 
   _startTimer() {
     timer = Timer.periodic(const Duration(seconds: 1), (_) {
@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
         body: hasQuizStarted ? ListView.builder(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.all(10.0),
           itemCount: quizList.length,
           itemBuilder: (context, index) {
             return QuizItem(
